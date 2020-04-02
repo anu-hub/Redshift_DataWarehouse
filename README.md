@@ -1,4 +1,4 @@
-**Project Summary:**
+## Project Summary:
 
 Sparkify a music start up wants to analyze the data they've been collecting on songs and user activity on their new music streaming app.
 As the data is growing they want to move the data warehouse from on-premis to AWS Redshift (Cloud Data Warehouse).
@@ -7,7 +7,7 @@ Data storage will be in S3 and the type of file is JSON.
 This project involves building an ETL pipeline by creating Redshit clusters to extract data from S3 and load into the staging tables and after required transformations load them into the fact & dimension tables.
 
 
-**Project Implementation Steps:**
+## Project Implementation Steps:
 
 ### 1. Created Redshift Cluster with the following configuration. Created an IAM Role and attched the role to the cluster, also created a user and security group.
 
@@ -49,7 +49,7 @@ sql_queries: table creation, table drop, insert & select query formats are stort
 ETL script is used to load the staging tables from the song & log json files located in the AWS S3 storage. Analytics tables are loaded from the staging tables after the transformations.
 
 
-**Steps to execute the scripts:**
+## Steps to execute the scripts
 
 ### 1. Execte create_tables.py script - Script to creates the database, staging, fact & dimension tables, also drops the tables if exists
 
